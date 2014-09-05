@@ -27,5 +27,12 @@ public class JavaApplication1 {
         System.out.println("3        9        27 ");
         System.out.println("4        16       64 ");
     }
+    public static double nPower(double x, int n) {
+        double product = 1;
+        for (int a=0; a<n; a++) {
+            product *= x;
+        }
+        return product;
+    }
     
 }
