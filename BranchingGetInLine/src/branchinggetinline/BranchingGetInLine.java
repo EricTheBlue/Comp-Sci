@@ -10,6 +10,7 @@ public class BranchingGetInLine {
 
     public static void main(String[] args) {
         
+        // Have user input points
         Scanner input = new Scanner(System.in);
         System.out.print("Input x1, y1, x2, y2, x3, y3: ");
         double x1 = input.nextDouble();
@@ -19,11 +20,13 @@ public class BranchingGetInLine {
         double x3 = input.nextDouble();
         double y3 = input.nextDouble();
         
+        // Output points
         System.out.print("(" + x1 + "," + y1 + ") (" + x2 + "," + y2 + ") (" + x3 + "," + y3 + ") are ");
+        // Compute whether points are collinear
         if (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2) == 0) {
             System.out.println("collinear");
         }
-        
+        // Compute whether points are not collinear
         if (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2) != 0) {
             System.out.println("not collinear");
         }
