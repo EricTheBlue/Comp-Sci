@@ -1,0 +1,126 @@
+﻿Eric Winsor
+October 2, 2014
+
+Exercise on Lesson 9
+
+Use the following code for problems 1 – 10 and give the value of true_false for each:
+	int i = 10, j = 3;
+	boolean true_false;
+
+1. true_false = (j > i);
+
+false
+
+2. true_false = (i > j);
+
+true
+
+3. true_false = (i = = j);
+
+false
+
+4. true_false = ( (j <= i) | | (j >= i) );
+
+true
+
+5. true_false = ( (i>j) && (j = = 0) );
+
+false
+
+6. true_false = ( (j < 50) | | (j != 33) );
+
+true
+
+7. true_false = ( !(j >= 0) | | (i <= 50) );
+
+true
+
+8. true_false = ( !( !(!true)) );
+
+false
+
+9. true_false = (5 <= 5);
+
+true
+
+
+10. true_false = (j != i);
+
+true
+
+11. Write a statement that will store a true in boolean b if the value in the variable m is 44 or less.
+
+b = m <= 44;
+
+12. Write a statement that will store a false in boolean b if the value in r is greater than 17.
+
+b = !( r > 17 );
+
+13. What is returned by the following expression? (Recall that the precedence order of logical operators is !, &&, and finally | |.)
+!( (2>3) | | (5= =5) && (7>1) && (4<15) | | (35<=36) && (89!=34) )
+	
+	false
+
+In problem 14 – 16 what is the output?
+
+14. String s1 = “school BUS”;
+if ( s1.equals(“school bus”) )
+	System.out.println(“Equal”);
+else
+	System.out.println(“Not equal”);
+
+Not equal
+
+15. String s1 = “school BUS”;
+if ( s1.equalsIgnoreCase(“school bus”) )
+System.out.println(“Equal”);
+else
+System.out.println(“Not equal”);
+
+Equal
+
+16. int j = 19, m = 200;
+if (j= =18)
+	m++;
+	j++;
+System.out.println(m);
+System.out.println(j);
+
+200
+20
+17. Write a statement that will store a false in boolean b if the value in g is not equal to 34.
+
+b = !( g != 34 );
+
+18. Write a statement that will store a true in boolean b if integer k is even, false if it is odd.
+
+b = k % 2 = = 0;
+
+19. Write a program that inputs a String from the keyboard after the prompt, “Enter your password”. If it’s entered exactly as “XRay”, printout “Password entered successfully.”; otherwise, have it printout “Incorrect password.”
+
+Scanner kbReader = new Scanner( System.in );
+System.out.print( “Enter your password ” );
+String password = kbReader.next( );
+if ( password.equals( “XRay” ) )
+      System.out.println( “Password entered successfully.” );
+	else
+		System.out.println( “Incorrect password.” );
+
+20. What is output by the following “nested ifs” code?
+      int k = 79;
+      if (k>50)
+      {
+      	if (k<60)
+      {System.out.println(“One”);}
+      	else
+      	{System.out.println(“Two”);}
+      }
+      else
+      {
+      	if (k>30)
+      		System.out.println(“Three”);
+      	else
+      		System.out.println(“Four”);
+      }
+	
+	Two

@@ -1,0 +1,112 @@
+﻿Eric Winsor
+October 2, 2014
+
+Exercise on Lesson 5
+
+Unless otherwise instructed in the following problems, state what gets printed.
+
+1. Write code that will create a constant E that’s equal to 2.718.
+
+final double E = 2.718;
+
+2. Write the simplest type constant that sets the number of students, NUM_STUDENTS, to 236.
+
+final int NUM_STUDENTS = 236;
+
+3. What’s wrong, if anything, with the following code in the main method?
+final double Area;
+Area = 203.49;
+	
+	There is nothing wrong with this code.
+
+4. int cnt = 27.2;
+System.out.println(cnt);
+What’s printed?
+
+The code will not compile.
+
+5. double d = 78.1;
+int fg = (int)d;
+System.out.println(fg);
+What’s printed?
+
+78
+
+6. Is   double f4 = 22;  legal?
+
+Yes
+
+7. The following code stores a 20 in the variable j:
+double j = 61/3;
+What small change can you make to this single line of code to make it produce the “real” answer to the division?
+
+double j = 61/3.0;
+
+8. System.out.println( (double)(90/9) );
+
+10.0
+
+9. System.out.println(4 + 6.0/4 + 5 * 3 - 3);
+
+17.5
+
+10. int p = 3;
+double d = 10.3;
+int j = (int)5.9;
+System.out.println(p + p * d - 3 * j);
+
+18.9
+
+11. int p = 3;
+double d = 10.3;
+int j = (int)5.9;
+System.out.println(p + p * (int)d - 3 * j);
+
+18
+
+The following code applies to 12 – 15:
+
+	int dividend = 12, divisor = 4, quotient = 0, remainder = 0;
+	int dividend2 = 13, divisor2 = 3, quotient2 = 0, remainder = 0;
+	quotient = dividend / divisor;
+	remainder = dividend % divisor;
+	quotient2 = dividend2 / divisor2;
+	remainder2 = dividend2 % divisor2;
+
+12. System.out.println(quotient);
+
+3
+
+13. System.out.println(remainder);
+
+0
+
+14. System.out.println(quotient2);
+
+4
+
+15. System.out.println(remainder2);
+
+1
+16. Write a line of code in which you divide the double precision number d by an integer variable called i. Type cast the double so that strictly integer division is done. Store the result in j, an integer.
+
+j = (int) d / i;
+
+17. Suppose we have a line of code that says
+
+Final String M = “ugg”;
+	
+	Later in the same program, would it be permissible to say the following?
+	
+		M = “wow”;
+	
+	No
+
+18. Is the following code legal? If so, what is printed? If not, why?
+
+int k = 7;
+k*=.5;
+System.out.println(k);
+	
+	Yes
+	3

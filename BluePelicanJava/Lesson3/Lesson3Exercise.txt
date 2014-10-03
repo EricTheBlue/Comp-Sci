@@ -1,0 +1,74 @@
+﻿Eric Winsor
+October 2, 2014
+
+Exercise on Lesson 3
+
+1. Write code in which a String variable s contains “The number of rabbits is”. An integer variable argh has a value of 129. Concatenate these variables into a String called report. Then print report. The printout should yield:
+	The number of rabbits is 129.
+Note that we want a period to print after the 9.
+
+String s = “The number of rabbits is”;
+int argh = 129;
+String report = s + “ ” + argh + “.”;
+System.out.println( report );
+
+2. What is the output of     System.out.pirntln( p.toUpperCase( ) );   if p = “Groovy Dude”?
+
+GROOVY DUDE
+
+3. Write code that will assign the value of “Computer Science is for nerds” to the String variable g. Then have it print this String with nothing but “small” letters.
+
+String g = “Computer Science is for nerds”;
+System.out.println( g.toLowerCase( ) );
+
+4. What will be the value of c?
+	String c;
+	String m = “The Gettysburg Address”;
+	c = m.substring(4);
+
+“Gettysburg Address”
+
+5. What will be the value of c?
+	String b = “Four score and seven years ago,”;
+	String c = b.substring(7, 12);
+
+“ore a”
+
+6. What is the value of count?
+	int count;
+	String s = “Surface tension”;
+	count = s.length( );
+
+15
+7. Write code that will look at the number of characters in String m = “Look here!”; and then print
+      “Look here!” has 10 characters.
+	Use the length( ) method to print the 10 …you must also force the two quotes to print.
+	
+	String m = “Look here!”;
+	System.out.println( “\“” + m + “\” has ” + m.length( ) + “ characters.” );
+
+8. How would you print the following?
+All “good” men should come to the aid of their country.
+	
+	System.out.println( “All \“good\” men should come to the aid of their country. );
+
+9. Write code that will produce the following printout using only a single println( ).
+
+System.out.println( “Hello\nHello again” );
+
+10. Write code that will produce the following printout.
+A backslash looks like this \, …right?
+	
+	System.out.println( “A backslash looks like this \\, …right?” );
+
+11. What is the output by the following?
+String pq = “Eddie Haskel”;
+int hm = pq.length( );
+String ed = pq.substring(hm - 4);
+System.out.println(ed);
+	
+	skel
+
+12. Which character is at the 5th index in the String “Herman Munster”?
+
+n
